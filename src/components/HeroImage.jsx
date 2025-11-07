@@ -12,7 +12,8 @@ export default function HeroImage() {
       <img
         src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1400&auto=format&fit=crop"
         alt="Person reading a newspaper"
-        className="h-[500px] md:h-[520px] lg:h-[550px] w-auto object-cover object-center grayscale rounded-md shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
+        loading="lazy"
+        className="h-[460px] md:h-[500px] lg:h-[540px] w-auto object-cover object-center grayscale rounded-md shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
       />
     </motion.div>
   );
