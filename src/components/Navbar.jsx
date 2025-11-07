@@ -3,10 +3,12 @@ import React from 'react';
 const NavItem = ({ label }) => (
   <a
     href="#"
-    className="uppercase text-[16px] tracking-[0.06em] text-black/90 hover:text-black transition-colors"
+    className="group uppercase text-[16px] tracking-[0.06em] text-black/90 hover:text-black transition-colors"
     style={{ fontFamily: 'Inter, ui-sans-serif, system-ui' }}
   >
-    {label}
+    <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform after:duration-200 group-hover:after:scale-x-100">
+      {label}
+    </span>
   </a>
 );
 
